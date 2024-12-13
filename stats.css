@@ -1,0 +1,62 @@
+/* Style global */
+body {
+    background: url('background.jpg') center center / cover no-repeat, 
+                linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-attachment: fixed;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: rgba(86, 28, 36, 0.9); /* Fond semi-transparent */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section principale */
+.stats-section {
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style du footer */
+footer {
+    background-color: rgba(86, 28, 36, 0.9); /* Fond semi-transparent */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des événements</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Maroculture - Events</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="statistics.html">statistics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Liste des événements</h2>
+
+            <!-- Filtre par type ou date -->
+            <div id="filters">
+                <label for="filter-type">Filtrer par type:</label>
+                <select id="filter-type">
+                    <option value="all">Tous</option>
+                    <option value="musique">Musique</option>
+                    <option value="film">Film</option>
+                    <option value="danse">Danse</option>
+                    <option value="art">Art</option>
+                </select>
+                <label for="filter-date">Filtrer par date:</label>
+                <input type="date" id="filter-date">
+            </div>
+
+            <!-- Tableau des événements -->
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Date</th>
+                        <th>Lieu</th>
+                        <th>Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <a class="event" href="event-details.html" class="details-btn">DétailsMawazine - Rythmes du Monde</a></td>
+                        <td>2024-06-01</td>
+                        <td>Rabat</td>
+                        <td>Musique</td>
+                        <td>
+                            <button class="details-btn" data-id="1">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-1" class="details-row">
+                        <td colspan="5">
+                            <p>Rabat s’illumine avec Mawazine, un voyage musical entre traditions et modernité.</p>
+                            <p>Une expérience unique où se mélangent artistes internationaux et musiciens locaux dans une ambiance vibrante.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Festival Gnaoua et Musiques du Monde</td>
+                        <td>2024-05-25</td>
+                        <td>Essaouira</td>
+                        <td>Musique</td>
+                        <td>
+                            <button class="details-btn" data-id="2">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-2" class="details-row">
+                        <td colspan="5">
+                            <p>Essaouira vibre au son des rythmes Gnaoua, mêlant mysticisme et partage culturel.</p>
+                            <p>Un événement où la musique Gnaoua rencontre d'autres genres musicaux et rassemble des passionnés du monde entier.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Festival International du Film de Marrakech</td>
+                        <td>2024-10-10</td>
+                        <td>Marrakech</td>
+                        <td>Film</td>
+                        <td>
+                            <button class="details-btn" data-id="3">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-3" class="details-row">
+                        <td colspan="5">
+                            <p>Marrakech célèbre le cinéma dans un cadre magique et féérique.</p>
+                            <p>Un festival de films internationaux, avec des projections en plein air et des rencontres avec des réalisateurs et acteurs célèbres.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Festival des Musiques Sacrées de Fès</td>
+                        <td>2024-06-10</td>
+                        <td>Fès</td>
+                        <td>Musique</td>
+                        <td>
+                            <button class="details-btn" data-id="4">Détails</button>
+                            <button class="delete-btn">Supprimer</button>
+                        </td>
+                    </tr>
+                    <tr id="details-4" class="details-row">
+                        <td colspan="5">
+                            <p>Fès réunit les âmes autour des mélodies sacrées du monde.</p>
+                            <p>Des concerts en plein air avec des chants mystiques de cultures diverses, créant une ambiance spirituelle et apaisante.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="events.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de l'Événement - Mawazine</title>
+    <link rel="stylesheet" href="event-details.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Maroculture - Détails de l'Événement</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="statistics.html">statistics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="event-info">
+                <h2>Mawazine - Rythmes du Monde</h2>
+                <p><strong>Date:</strong> 1er Juin 2024</p>
+                <p><strong>Lieu:</strong> Rabat, Maroc</p>
+                <p><strong>Type:</strong> Musique</p>
+                <p><strong>Description:</strong> Mawazine est un festival de musique qui attire des artistes de renommée internationale et qui célèbre la diversité des cultures musicales à Rabat, Maroc.</p>
+
+                <button id="show-more-btn">Afficher plus de détails</button>
+
+                <section id="more-details" style="display: none;">
+                    <p>Mawazine rassemble une multitude d'artistes dans un cadre enchanteur où se mêlent tradition et modernité. Ce festival a pour objectif de promouvoir les musiques du monde et de rapprocher les cultures.</p>
+                    <p>Chaque année, des milliers de spectateurs se rendent à ce festival pour vivre une expérience musicale unique, qui va des rythmes traditionnels aux sons les plus contemporains.</p>
+                </section>
+            </section>
+
+            <section id="gallery">
+                <h3>Galerie d'Images</h3>
+                <div id="image-gallery">
+                    <button id="prev-btn">❮</button>
+                    <div id="gallery-container">
+                        <img class="gallery-img" src="img1.jpeg" alt="Image 1">
+                        <img class="gallery-img" src="img2.jpeg" alt="Image 2">
+                        <img class="gallery-img" src="img3.jpeg" alt="Image 3">
+                        <img class="gallery-img" src="img4.jpeg" alt="Image 4">
+                    </div>
+                    <button id="next-btn">❯</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <script src="event-details.js"></script>
+</body>
+</html>
+

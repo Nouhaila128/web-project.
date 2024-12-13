@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Événement</title>
+    <link rel="stylesheet" href="add-event.css">
+</head>
+<body>
+    <header>
+        <h1>Ajouter un Nouveau Événement</h1>
+    </header>
+
+    <main>
+        <form id="event-form">
+            <div class="form-group">
+                <label for="event-name">Nom de l'événement *</label>
+                <input type="text" id="event-name" name="event-name" placeholder="Entrez le nom de l'événement">
+            </div>
+            <div class="form-group">
+                <label for="event-location">Lieu *</label>
+                <input type="text" id="event-location" name="event-location" placeholder="Entrez le lieu de l'événement">
+            </div>
+            <div class="form-group">
+                <label for="event-date">Date *</label>
+                <input type="date" id="event-date" name="event-date">
+            </div>
+            <div class="form-group">
+                <label for="event-type">Type d'Événement *</label>
+                <select id="event-type" name="event-type">
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="Concert">Concert</option>
+                    <option value="Exposition">Exposition</option>
+                    <option value="Conférence">Conférence</option>
+                    <option value="Festival">Festival</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="event-description">Description *</label>
+                <textarea id="event-description" name="event-description" placeholder="Entrez une description détaillée"></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Ajouter l'Événement</button>
+        </form>
+    </main>
+
+    <script src="add-event.js"></script>
+</body>
+</html>
